@@ -4,8 +4,7 @@
 }
 
 
-body {
-  margin-top: 200px;  
+body {    
   text-align: center;
   background:#937B69 ;
   color: white;
@@ -55,7 +54,8 @@ select {
   box-shadow: 6px 10px 0px rgb(65, 60, 60); 
 
   user-select: none;  
-  margin-top: 25px;
+  margin-top: 200px;
+
 }
 
 #btn:hover {
@@ -64,7 +64,7 @@ select {
 
 #btn:active {
 box-shadow: 3px 5px 0px rgb(65, 60, 60); 
-margin-top: 30px;
+margin-top: 205px;
 }
 
 
