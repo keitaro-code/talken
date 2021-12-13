@@ -13,12 +13,21 @@
     if(kinds.value == 'nothing'){
       display.textContent = 'テーマをお選びください';
     } else if (kinds.value == 'hobby') {
-      display.textContent = hobbys[Math.floor(Math.random() * hobbys.length)];
-
+      display.textContent = hobbys.splice(Math.floor(Math.random() * hobbys.length),1)[0];
+      if(hobbys.length === 0){
+        display.textContent = '質問なくなっちゃった';
+      }
     } else if (kinds.value == 'love') {
-      display.textContent = loves[Math.floor(Math.random() * loves.length)]; 
+      display.textContent = loves.splice(Math.floor(Math.random() * loves.length),1)[0]; 
+      if(loves.length === 0){
+        display.textContent = '質問なくなっちゃった';
+      }
+      
     } else {
-      display.textContent = others[Math.floor(Math.random() * others.length)]; 
+      display.textContent = others.splice(Math.floor(Math.random() * others.length),1)[0]; 
+      if(others.length === 0){
+        display.textContent = '質問なくなっちゃった';
+      }
     }}  );
 
   const kinds = document.querySelector('select');
